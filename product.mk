@@ -10,6 +10,10 @@ ifneq (,$(wildcard packages/apps/Bellis))
 PRODUCT_PACKAGES += Bellis
 endif
 
+# Custom OTA endpoint
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/22.0/{device}.json
+
 # Default ADB shell prompt
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.adb.shell=/system_ext/bin/bash
