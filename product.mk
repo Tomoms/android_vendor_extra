@@ -37,3 +37,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 ifeq ($(WITH_GMS), true)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 endif
+
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += $(EXTRA_PATH)/overlay-lineage
