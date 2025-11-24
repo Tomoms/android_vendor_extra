@@ -12,7 +12,7 @@ endif
 
 # Custom OTA endpoint
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/22.0/{device}.json
+    lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/23.0/{device}.json
 
 # Default ADB shell prompt
 PRODUCT_SYSTEM_PROPERTIES += \
