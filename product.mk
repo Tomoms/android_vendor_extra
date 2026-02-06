@@ -10,6 +10,16 @@ ifneq (,$(wildcard packages/apps/Bellis))
 PRODUCT_PACKAGES += Bellis
 endif
 
+# F-Droid
+ifneq (,$(wildcard external/F-Droid))
+PRODUCT_PACKAGES += F-Droid
+endif
+
+# F-Droid Privileged Extension
+ifneq (,$(wildcard packages/apps/F-DroidPrivilegedExtension))
+PRODUCT_PACKAGES += F-DroidPrivilegedExtension
+endif
+
 # Custom OTA endpoint
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/22.0/{device}.json
