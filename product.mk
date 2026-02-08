@@ -10,6 +10,11 @@ ifneq (,$(wildcard packages/apps/Bellis))
 PRODUCT_PACKAGES += Bellis
 endif
 
+# LogViewer
+ifneq (,$(wildcard packages/apps/LogViewer))
+PRODUCT_PACKAGES += LogViewer
+endif
+
 # Custom OTA endpoint
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/22.0/{device}.json
