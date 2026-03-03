@@ -31,7 +31,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     lineage.updater.uri=https://raw.githubusercontent.com/Tomoms/ota_provider/master/23.x/{device}.json
 
 # Default ADB shell prompt
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.adb.shell=/system_ext/bin/bash
 
 # Google Apps
