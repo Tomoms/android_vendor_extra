@@ -14,6 +14,8 @@ endif
 # F-Droid
 ifneq (,$(wildcard external/F-Droid))
 PRODUCT_PACKAGES += F-Droid
+PRODUCT_COPY_FILES += \
+    $(EXTRA_PATH)/additional_fdroid_repos.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/org.fdroid.fdroid/additional_repos.xml
 endif
 
 # LogViewer
