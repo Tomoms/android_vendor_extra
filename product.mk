@@ -16,11 +16,6 @@ ifneq (,$(wildcard external/F-Droid))
 PRODUCT_PACKAGES += F-Droid
 endif
 
-# F-Droid Privileged Extension
-ifneq (,$(wildcard packages/apps/F-DroidPrivilegedExtension))
-PRODUCT_PACKAGES += F-DroidPrivilegedExtension
-endif
-
 # LogViewer
 ifneq (,$(wildcard packages/apps/LogViewer))
 PRODUCT_PACKAGES += LogViewer
