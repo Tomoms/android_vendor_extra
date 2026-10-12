@@ -1,0 +1,7 @@
+prebuilt_etc {
+    name: "fdroid-basic-repo",
+    product_specific: true,
+    src: "additional_repos.json",
+    filename_from_src: true,
+    sub_dir: "org.fdroid.basic",
+}
