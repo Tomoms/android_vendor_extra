@@ -11,6 +11,13 @@ ifneq (,$(wildcard packages/apps/Bellis))
 PRODUCT_PACKAGES += Bellis
 endif
 
+# F-Droid Basic
+ifneq (,$(wildcard external/F-Droid))
+PRODUCT_PACKAGES += \
+    F-DroidBasic \
+    fdroid-basic-repo
+endif
+
 # LogViewer
 ifneq (,$(wildcard packages/apps/LogViewer))
 PRODUCT_PACKAGES += LogViewer
